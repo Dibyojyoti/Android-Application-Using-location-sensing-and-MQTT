@@ -1,0 +1,39 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "com.example.dibyojyoti.mytest"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile files('libs/hawtbuf-1.11.jar')
+   // compile files('libs/mqtt-client-1.12.jar')
+    compile files('libs/hawtdispatch-1.22.jar')
+    compile files('libs/hawtdispatch-transport-1.22.jar')
+    compile files('libs/org.eclipse.paho.android.service-1.0.3-20150620.041150-108.jar')
+    //compile files('libs/org.eclipse.paho.client.mqttv3-1.0.3-SNAPSHOT.jar')
+    //compile 'com.android.support:appcompat-v7:24.0.0-beta1'
+    compile 'com.google.android.gms:play-services:9.0.2'
+    //compile 'com.android.support:support-v4:24.0.0-beta1'
+    compile 'com.google.android.gms:play-services-ads:9.0.2'
+    compile 'com.google.android.gms:play-services-auth:9.0.2'
+    compile 'com.google.android.gms:play-services-gcm:9.0.2'
+    compile files('libs/org.eclipse.paho.mqtt.utility-1.0.2.jar')
+}

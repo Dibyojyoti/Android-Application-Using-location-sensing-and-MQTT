@@ -1,0 +1,36 @@
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="286dp"
+            android:layout_height="40dp"
+            android:id="@+id/TFAddres"/>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="95dp"
+            android:layout_height="35dp"
+            android:id="@+id/btnSearch"
+            android:layout_gravity="right"
+            android:text="Search"
+            android:onClick="onSearch" />
+    </LinearLayout>
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="381dp"
+        android:layout_height="wrap_content"
+        tools:context="com.example.dibyojyoti.mytest.MapsActivity"
+        tools:layout="@layout/abc_action_menu_layout" />
+
+
+</LinearLayout>
