@@ -1,7 +1,9 @@
 # TK3FinalProject
 TK3FinalProject andriod app MyCircle
 
-Course: Ubiquitous / Mobile ComputingMasters studies
+Course: Ubiquitous / Mobile Computing
+
+Masters studies
 
 MSc: Distributed Software Systems University: Technische Universität Darmstadt
 
